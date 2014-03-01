@@ -1,0 +1,26 @@
+<head>
+  <title>meteor-helpers</title>
+</head>
+
+<body>
+  {{> postPage}}
+</body>
+
+<template name="layout">
+  <div class="app-wrapper">
+    {{> yield}}
+  </div>
+</template>
+
+<template name="postPage">
+  {{> postMain}}
+</template>
+
+<template name="postMain">
+  <h1>{{greeting}}</h1>
+  {{> postMeta}}
+</template>
+
+<template name="postMeta">
+  {{postDate}}
+</template>
